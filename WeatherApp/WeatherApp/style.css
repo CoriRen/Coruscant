@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+font: 400 16px 'Roboto', sans-serif;
+}
+h1{
+  font: 300 5rem 'Roboto', sans-serif;
+
+}
+h4{
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+h2{
+  padding-top: 1%;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+p, .thin{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: black;
+}
+.smallText{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:#4a4b4f;
+  line-height: 1.4;
+
+}
+.shortForecast{
+  padding: 0 0 1% 0;
+}
+.detailedForecast{
+  padding: 4% 0;
+}
+.dateTime{
+  display: inline-block;
+  padding-right: 2%;
+}
+.news{
+  font-size: 1.2rem;
+  font-weight: 300;
+  color:#4a4b4f;
+  line-height: 1.4;
+}
+.button{
+  display: inline-block;
+  border: 1px solid #f8a000;
+  border-radius: 25px;
+  padding: 2% 5%;
+  margin: 2% 0;
+  text-decoration: none;
+  background-color: #f8a000;
+  color: white;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.innerContainer{
+  width: 480px;
+  margin: 0 auto;
+}
+
+.flexBox{
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5% 0 5%;
+}
+
+.textContent{
+  padding: 0 5% 0 5%;
+
+}
+.border{
+  width: 20%;
+  border-bottom: 2px solid #b1b1b1;
+  padding: 2% 0;
+}
+.grid{
+  display: flex;
+  justify-content: flex-start;
+  padding: 8% 0;
+}
+.rightBorder{
+  border-right: 1px solid #b1b1b1;
+  padding: 0 5% 0 0;
+}
+.leftBorder{
+  padding-left: 5%;
+}
+#details{
+  padding-bottom: 19%;
+}
+/*.spacer{
+  padding-bottom: 300px;
+}*/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.sunny{
+  background: url(Assets/Clouds.png) no-repeat right top, linear-gradient(#bee4fa, #b3d6fc);
+  background-size: 300px;
+  
+}
+.waves{
+  position: relative;
+  width: 480px;
+  bottom: -5px;
+  left:0px;
+}
+
+
+
+/*media query width 480 X 800*/
